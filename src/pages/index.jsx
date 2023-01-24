@@ -4,11 +4,15 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import {Button} from '@/components/Button'
-import {Card} from '@/components/Card'
+import {Card} from '@/components/card/Card'
+import CardTitle from '@/components/card/CardTitle'
+import CardDescription from "@/components/card/CardDescription";
+import CardCta from "@/components/card/CardCta";
+import CardEyebrow from "@/components/card/CardEyebrow";
 import {Container} from '@/components/layouts/Container'
 import {
     TwitterIcon, InstagramIcon, GitHubIcon, LinkedInIcon,
-} from '@/components/SocialIcons'
+} from '@/components/icons/SocialIcons'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -78,14 +82,14 @@ function ArrowDownIcon(props) {
 
 function Article({article}) {
     return (<Card as="article">
-        <Card.Title href={`/articles/${article.slug}`}>
+        <CardTitle href={`/articles/${article.slug}`}>
             {article.title}
-        </Card.Title>
-        <Card.Eyebrow as="time" dateTime={article.date} decorate>
+        </CardTitle>
+        <CardEyebrow as="time" dateTime={article.date} decorate>
             {formatDate(article.date)}
-        </Card.Eyebrow>
-        <Card.Description>{article.description}</Card.Description>
-        <Card.Cta>Read article</Card.Cta>
+        </CardEyebrow>
+        <CardDescription>{article.description}</CardDescription>
+        <CardCta>Read article</CardCta>
     </Card>)
 }
 
@@ -209,19 +213,18 @@ export default function Home({articles}) {
             </title>
             <meta
                 name="description"
-                content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+                content="Name's Miguel Carrera, I'm a software developer and designer!"
             />
         </Head>
         <Container className="mt-9">
             <div className="max-w-2xl">
                 <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                    Software designer, founder, and amateur astronaut.
+                    Software developer, designer, and maker.
                 </h1>
                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                    I’m Spencer, a software designer and entrepreneur based in New York
-                    City. I’m the founder and CEO of Planetaria, where we develop
-                    technologies that empower regular people to explore space on their
-                    own terms.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores debitis magnam
+                    omnis, porro voluptate. Doloremque ratione, temporibus. Harum hic, minus? At aut corporis
+                    deleniti fugiat minima recusandae repellat repudiandae.
                 </p>
                 <div className="mt-6 flex gap-6">
                     <SocialLink
@@ -235,7 +238,7 @@ export default function Home({articles}) {
                         icon={InstagramIcon}
                     />
                     <SocialLink
-                        href="https://github.com"
+                        href="https://github.com/miomech"
                         aria-label="Follow on GitHub"
                         icon={GitHubIcon}
                     />

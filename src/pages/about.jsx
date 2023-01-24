@@ -6,7 +6,7 @@ import clsx from 'clsx'
 import {Container} from '@/components/layouts/Container'
 import {
     TwitterIcon, InstagramIcon, GitHubIcon, LinkedInIcon,
-} from '@/components/SocialIcons'
+} from '@/components/icons/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
 
 function SocialLink({className, href, children, icon: Icon}) {

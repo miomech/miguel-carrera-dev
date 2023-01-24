@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Head from 'next/head'
 
-import {Card} from '@/components/Card'
+import {Card} from '@/components/card/Card'
 import {SimpleLayout} from '@/components/layouts/SimpleLayout'
 import logoAnimaginary from '@/images/logos/animaginary.svg'
 import logoCosmos from '@/images/logos/cosmos.svg'
