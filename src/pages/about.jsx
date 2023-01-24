@@ -53,54 +53,51 @@ export default function About() {
                 </div>
                 <div className="lg:order-first lg:row-span-2">
                     <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                        I’m Spencer Sharp. I live in New York City, where I design the
-                        future.
+                        I’m Miguel Carrera. A Fullstack developer working on building the web!
                     </h1>
                     <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
                         <p>
-                            I’ve loved making things for as long as I can remember, and
-                            wrote my first program when I was 6 years old, just two weeks
-                            after my mom brought home the brand new Macintosh LC 550 that I
-                            taught myself to type on.
-                        </p>
-                        <p>
-                            The only thing I loved more than computers as a kid was space.
-                            When I was 8, I climbed the 40-foot oak tree at the back of our
-                            yard while wearing my older sister’s motorcycle helmet, counted
-                            down from three, and jumped — hoping the tree was tall enough
-                            that with just a bit of momentum I’d be able to get to orbit.
-                        </p>
-                        <p>
-                            I spent the next few summers indoors working on a rocket design,
-                            while I recovered from the multiple surgeries it took to fix my
-                            badly broken legs. It took nine iterations, but when I was 15 I
-                            sent my dad’s Blackberry into orbit and was able to transmit a
-                            photo back down to our family computer from space.
-                        </p>
-                        <p>
-                            Today, I’m the founder of Planetaria, where we’re working on
-                            civilian space suits and manned shuttle kits you can assemble at
-                            home so that the next generation of kids really <em>can</em>{' '}
-                            make it to orbit — from the comfort of their own backyards.
+                            For the past five years, I have acted as the CTO of a small marketing agency here in the US.
+                            I'm looking to
+                            focus on software development. If necessary, I am capable of acting in management roles as
+                            well.
+                            My focus has been learning and mastering the core web programming languages (PHP & JS)
+                            rather than
+                            specializing in a few sets of libraries. Doing so has allowed me to use whichever library is
+                            necessary for
+                            the job and quickly adapt to requirements.
+                            My career started in the industrial manufacturing sector. I would design and build products
+                            for various
+                            industries, such as medical, automotive, aviation, and defense. After around five years, I
+                            transitioned
+                            from engineering to software development.
+                            I started by working with WordPress and installing plugins and themes. Then I gradually
+                            learned more
+                            about PHP and Javascript development to build my solutions. Later I would learn to leverage
+                            APIs and
+                            3rd party services to enhance application capabilities. Backend development with PHP has
+                            been my
+                            main focus when it comes to development. I am just as comfortable in Javascript and Python.
+                            I'm able to
+                            write Python code and leverage its vast libraries.
+                            I don't know everything (though It would be awesome if I did). My most valuable skills are;
+                            being able to
+                            teach myself and adapting to any situation that comes my way. While I am self-reliant, my
+                            years of
+                            experience have taught me to rely on the help of others when necessary and to know where to
+                            look for
+                            answers.
                         </p>
                     </div>
                 </div>
                 <div className="lg:pl-20">
                     <ul role="list">
-                        <SocialLink href="#" icon={TwitterIcon}>
-                            Follow on Twitter
-                        </SocialLink>
-                        <SocialLink href="#" icon={InstagramIcon} className="mt-4">
-                            Follow on Instagram
-                        </SocialLink>
-                        <SocialLink href="#" icon={GitHubIcon} className="mt-4">
-                            Follow on GitHub
-                        </SocialLink>
-                        <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
-                            Follow on LinkedIn
+                        <p className='text-gray-500'>(I&#39; m not big on social media!)</p>
+                        <SocialLink href="https://github.com/miomech" icon={GitHubIcon} className="mt-4">
+                            Check Out My GitHub
                         </SocialLink>
                         <SocialLink
-                            href="mailto:spencer@planetaria.tech"
+                            href="mailto:miguel.carrera@adivolt.com"
                             icon={MailIcon}
                             className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
                         >

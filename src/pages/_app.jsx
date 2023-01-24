@@ -1,38 +1,40 @@
-import {useEffect, useRef} from 'react'
-
-import {Footer} from '@/components/footer/Footer'
-import {Header} from '@/components/header/Header'
+import {Footer} from '@/components/footer/Footer';
+import {Header} from '@/components/header/Header';
+import {Poppins, Silkscreen} from '@next/font/google';
 
 import '@/styles/tailwind.css'
 import 'focus-visible'
 
-// * Gathers the previous url for use in navigation
-function usePrevious(value) {
-    let ref = useRef()
 
-    useEffect(() => {
-        ref.current = value
-    }, [value])
+const poppins = Poppins({
+    subsets: ['latin'],
+    weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+    variable: '--font-poppins',
+})
 
-    return ref.current
-}
+const silkscreen = Silkscreen({
+    subsets: ['latin'],
+    weight: ['400', '700'],
+    variable: '--font-silkscreen',
+})
 
-export default function App({Component, pageProps, router}) {
 
-    let previousPathname = usePrevious(router.pathname)
+export default function App({Component, pageProps}) {
 
-    return (<>
-        <div className="fixed inset-0 flex justify-center sm:px-8">
-            <div className="flex w-full max-w-7xl lg:px-8">
-                <div className="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20"/>
+    return (
+        <>
+            <div className="fixed inset-0 flex justify-center sm:px-8">
+                <div className="flex w-full max-w-7xl lg:px-8">
+                    <div className="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20"/>
+                </div>
             </div>
-        </div>
-        <div className="relative">
-            <Header/>
-            <main>
-                <Component previousPathname={previousPathname} {...pageProps} />
-            </main>
-            <Footer/>
-        </div>
-    </>)
+            <div className={`${poppins.variable} ${silkscreen.variable} font-sans relative`}>
+                <Header/>
+                <main>
+                    <Component {...pageProps} />
+                </main>
+                <Footer/>
+            </div>
+        </>
+    )
 }
