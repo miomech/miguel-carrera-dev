@@ -1,8 +1,6 @@
 import logoPlanetaria from "@/images/logos/planetaria.svg";
 import Image from "next/image";
-import {Button} from "@/components/Button";
 import BriefcaseIcon from "@/components/icons/BriefcaseIcon";
-import ArrowDownIcon from "@/components/icons/ArrowDownIcon";
 
 export default function Resume() {
     let resume = [
@@ -38,7 +36,7 @@ export default function Resume() {
     return (<div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
         <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
             <BriefcaseIcon className="h-6 w-6 flex-none"/>
-            <span className="ml-3">Work</span>
+            <span className="ml-3">Work Experience</span>
         </h2>
         <ol className="mt-6 space-y-4">
             {resume.map((role, roleIndex) => (<li key={roleIndex} className="flex gap-4">

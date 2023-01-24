@@ -15,6 +15,18 @@ const projects = [
         link: {href: 'http://oldworldtech.com', label: 'oldworldtech.com'},
         logo: logoPlanetaria
     },
+    {
+        name: 'Pokedex',
+        description: 'A fun to use online pokedex for all pokemon fans out there!',
+        link: {href: 'http://dex.adivolt.com', label: 'dex.adivolt.com'},
+        logo: logoPlanetaria
+    },
+    {
+        name: 'Bueno Price',
+        description: 'A powerful tool for helping businesses of all sizes estimate their pricing correctly',
+        link: {href: 'http://buenoprice.com', label: 'buenoprice.com'},
+        logo: logoPlanetaria
+    },
 ]
 
 export default function Projects() {

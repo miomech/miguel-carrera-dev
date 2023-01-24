@@ -9,6 +9,4 @@ const variantStyles = {
 export function Button({variant = 'primary', className, href, ...props}) {
     className = clsx('inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none', variantStyles[variant], className)
 
-    return href ? (<Link href={href} className={className} {...props} />) : (
-        <button className={className} {...props} />)
-}
+    return href ? (<Link href={href} className={className} {...props} />) : (<button className={className} {...props} />)}

@@ -4,6 +4,7 @@ import {GitHubIcon} from '@/components/icons/SocialIcons'
 
 import Resume from "@/components/Resume";
 import SocialLink from "@/components/SocialLink";
+import {Button} from "@/components/Button";
 
 export default function Home() {
     return (<>
@@ -18,7 +19,7 @@ export default function Home() {
         </Head>
         <Container className="mt-9">
             <div className="max-w-2xl">
-                <h1 className="text-4xl font-normal tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl font-silkscreen ">
+                <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl font-silkscreen ">
                     Software developer, designer.
                 </h1>
                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
@@ -26,6 +27,7 @@ export default function Home() {
                     omnis, porro voluptate. Doloremque ratione, temporibus. Harum hic, minus? At aut corporis
                     deleniti fugiat minima recusandae repellat repudiandae.
                 </p>
+                <Button className='mt-5' href='#'> Learn More </Button>
                 <div className="mt-6 flex gap-6">
                     <SocialLink
                         href="https://github.com/miomech"
@@ -37,9 +39,7 @@ export default function Home() {
         </Container>
         <Container className="mt-24 md:mt-28">
             <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-                <div className="space-y-10 lg:pl-16 xl:pl-24">
-                    <Resume/>
-                </div>
+
             </div>
         </Container>
     </>)

@@ -4,10 +4,9 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import {Container} from '@/components/layouts/Container'
-import {
-    TwitterIcon, InstagramIcon, GitHubIcon, LinkedInIcon,
-} from '@/components/icons/SocialIcons'
+import {GitHubIcon,} from '@/components/icons/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
+import Resume from "@/components/Resume";
 
 function SocialLink({className, href, children, icon: Icon}) {
     return (<li className={clsx(className, 'flex')}>
@@ -104,6 +103,7 @@ export default function About() {
                             miguel.carrera@adivolt.com
                         </SocialLink>
                     </ul>
+                    <Resume/>
                 </div>
             </div>
         </Container>
