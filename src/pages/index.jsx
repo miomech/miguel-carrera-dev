@@ -4,7 +4,6 @@ import {GitHubIcon} from '@/components/icons/SocialIcons'
 import SocialLink from "@/components/SocialLink";
 import {Button} from "@/components/Button";
 import Experience from "@/components/three/Experience";
-import {Canvas} from "@react-three/fiber";
 
 export default function Home() {
     return (<>
@@ -21,13 +20,13 @@ export default function Home() {
                 <div>
                     <div className="max-w-2xl">
                         <h1 className="text-4xl font-bold tracking-tight text-primary-800 dark:text-neutral-100 sm:text-5xl ">
-                            Fullstack Web developer, designer, and maker.
+                            Fullstack developer, designer, and maker.
                         </h1>
                     </div>
                     <p className="mt-6 text-base text-primary-500 dark:text-neutral-200">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores debitis magnam
-                        omnis, porro voluptate. Doloremque ratione, temporibus. Harum hic, minus? At aut corporis
-                        deleniti fugiat minima recusandae repellat repudiandae.
+                        For the past 9 years I&#39;ve been working with technology of all types.
+                        From programming heavy industrial manufacturing equipment
+                        to developing creative and interactive web experiences.
                     </p>
                     <Button variant='primary' className='mt-5' href='/about'> Learn More </Button>
                     <div className="mt-6 flex gap-6">
@@ -39,9 +38,11 @@ export default function Home() {
                     </div>
                 </div>
             </Container>
-            <div className='mt-5 md:mt-5 h-[80vh]'>
+
+            <div className='h-[40vh] md:h-[50vh] lg:h-[100vh] '>
                 <Experience/>
             </div>
+
         </>
     )
 }
