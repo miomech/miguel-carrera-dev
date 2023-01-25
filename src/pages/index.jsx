@@ -39,7 +39,7 @@ export default function Home() {
                     </div>
                 </div>
             </Container>
-            <div className='mt-5 md:mt-10 h-[80vh]'>
+            <div className='mt-5 md:mt-5 h-[80vh]'>
                 <Experience/>
             </div>
         </>

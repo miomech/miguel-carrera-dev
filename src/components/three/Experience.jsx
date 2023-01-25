@@ -11,7 +11,7 @@ export default function Experience() {
                     fov: 45,
                     near: 0.1,
                     far: 2000,
-                    position: [-3, 1.5, 4]
+                    position: [-4, 1.5, 4]
                 }}
             >
 
@@ -27,7 +27,7 @@ export default function Experience() {
                     snap={{mass: 4, tension: 400}}
 
                 >
-                    <Float rotationIntensity={0.4}>
+                    <Float rotationIntensity={1} >
                         <Model/>
                         <Text
                             font='./bangers-v20-latin-regular.woff'
@@ -36,6 +36,7 @@ export default function Experience() {
                             rotation-y={-1.25}
                             maxWidth={2}
                             textAlign='center'
+                            castShadow={false}
                         >
                             Hello!
                         </Text>
@@ -43,10 +44,10 @@ export default function Experience() {
                 </PresentationControls>
 
                 <ContactShadows
-                    position-y={-1.4}
-                    opacity={0.4}
+                    position-y={-1.1}
+                    opacity={0.3}
                     scale={5}
-                    blur={2.4}
+                    blur={3}
                 />
             </Canvas>
         </>
