@@ -12,9 +12,9 @@ function SocialLink({className, href, children, icon: Icon}) {
     return (<li className={clsx(className, 'flex')}>
         <Link
             href={href}
-            className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+            className="group flex text-sm font-medium text-primary-800 transition hover:text-accent-500 dark:text-neutral-200 dark:hover:text-success-500"
         >
-            <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500"/>
+            <Icon className="h-6 w-6 flex-none fill-primary-800 dark:fill-neutral-100 transition group-hover:fill-accent-500 dark:group-hover:fill-success-500"/>
             <span className="ml-4">{children}</span>
         </Link>
     </li>)
@@ -35,26 +35,26 @@ export default function About() {
             <title>About - Miguel Carrera</title>
             <meta
                 name="description"
-                content="I’m Spencer Sharp. I live in New York City, where I design the future."
+                content="I’m Miguel Carrera. A fullstack developer working on building the web!."
             />
         </Head>
         <Container className="mt-16 sm:mt-32">
             <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
                 <div className="lg:pl-20">
                     <div className="max-w-xs px-2.5 lg:max-w-none">
-                        <Image
-                            src={portraitImage}
-                            alt=""
-                            sizes="(min-width: 1024px) 32rem, 20rem"
-                            className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
-                        />
+                        {/*<Image*/}
+                        {/*    src={portraitImage}*/}
+                        {/*    alt=""*/}
+                        {/*    sizes="(min-width: 1024px) 32rem, 20rem"*/}
+                        {/*    className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"*/}
+                        {/*/>*/}
                     </div>
                 </div>
                 <div className="lg:order-first lg:row-span-2">
-                    <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+                    <h1 className="text-4xl font-bold tracking-tight text-primary-800 dark:text-neutral-100 sm:text-5xl">
                         I’m Miguel Carrera. A Fullstack developer working on building the web!
                     </h1>
-                    <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+                    <div className="mt-6 space-y-7 text-base text-primary-500 dark:text-neutral-200">
                         <p>
                             For the past five years, I have acted as the CTO of a small marketing agency here in the US.
                             I'm looking to
@@ -91,19 +91,19 @@ export default function About() {
                 </div>
                 <div className="lg:pl-20">
                     <ul role="list">
-                        <p className='text-gray-500'>(I&#39; m not big on social media!)</p>
+                        <p className='text-neutral-400'>(I&#39; m not big on social media!)</p>
                         <SocialLink href="https://github.com/miomech" icon={GitHubIcon} className="mt-4">
                             GitHub
                         </SocialLink>
                         <SocialLink
                             href="mailto:miguel.carrera@adivolt.com"
                             icon={MailIcon}
-                            className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
+                            className="mt-8 border-t border-primary-500/25 pt-8 dark:border-neutral-100/40"
                         >
                             miguel.carrera@adivolt.com
                         </SocialLink>
                     </ul>
-                    <div className='mt-5'>
+                    <div className='mt-8'>
                         <Resume/>
                     </div>
                 </div>

@@ -36,7 +36,7 @@ export default function Resume() {
         }
     ]
 
-    return (<div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+    return (<div className="rounded-2xl border border-primary-500/25 p-4 dark:border-neutral-100/40">
         <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
             <BriefcaseIcon className="h-6 w-6 flex-none"/>
             <span className="ml-3">Work Experience</span>
@@ -49,16 +49,16 @@ export default function Resume() {
                 </div>
                 <dl className="flex flex-auto flex-wrap gap-x-2">
                     <dt className="sr-only">Company</dt>
-                    <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                    <dd className="w-full flex-none text-sm font-medium text-primary-800 dark:text-white">
                         {role.company}
                     </dd>
                     <dt className="sr-only">Role</dt>
-                    <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+                    <dd className="text-xs text-primary-500 dark:text-neutral-200">
                         {role.title}
                     </dd>
                     <dt className="sr-only">Date</dt>
                     <dd
-                        className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
+                        className="ml-auto text-xs text-neutral-600 dark:text-neutral-300"
                         aria-label={`${role.start.label ?? role.start} until ${role.end.label ?? role.end}`}
                     >
                         <time dateTime={role.start.dateTime ?? role.start}>

@@ -19,10 +19,10 @@ export default function Home() {
         </Head>
         <Container className="mt-9">
             <div className="max-w-2xl">
-                <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl font-silkscreen ">
+                <h1 className="text-4xl font-bold tracking-tight text-primary-800 dark:text-neutral-100 sm:text-5xl ">
                     Fullstack Web developer, designer, and maker.
                 </h1>
-                <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+                <p className="mt-6 text-base text-primary-500 dark:text-neutral-200">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores debitis magnam
                     omnis, porro voluptate. Doloremque ratione, temporibus. Harum hic, minus? At aut corporis
                     deleniti fugiat minima recusandae repellat repudiandae.
@@ -31,7 +31,7 @@ export default function Home() {
                 <div className="mt-6 flex gap-6">
                     <SocialLink
                         href="https://github.com/miomech"
-                        aria-label="Follow on GitHub"
+                        aria-label="View my GitHub"
                         icon={GitHubIcon}
                     />
                 </div>
