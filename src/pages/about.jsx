@@ -5,7 +5,7 @@ import clsx from 'clsx'
 
 import {Container} from '@/components/layouts/Container'
 import {GitHubIcon,} from '@/components/icons/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import portraitImage from '@/images/avatar.jpg'
 import Resume from "@/components/Resume";
 
 function SocialLink({className, href, children, icon: Icon}) {
@@ -38,16 +38,16 @@ export default function About() {
                 content="I’m Miguel Carrera. A fullstack developer working on building the web!."
             />
         </Head>
-        <Container className="mt-16 sm:mt-32">
+        <Container className="mt-1 sm:mt-20">
             <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
                 <div className="lg:pl-20">
                     <div className="max-w-xs px-2.5 lg:max-w-none">
-                        {/*<Image*/}
-                        {/*    src={portraitImage}*/}
-                        {/*    alt=""*/}
-                        {/*    sizes="(min-width: 1024px) 32rem, 20rem"*/}
-                        {/*    className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"*/}
-                        {/*/>*/}
+                        <Image
+                            src={portraitImage}
+                            alt=""
+                            sizes="(min-width: 1024px) 32rem, 20rem"
+                            className="aspect-square rotate-6 rounded-2xl bg-neutral-500 drop-shadow-lg object-cover dark:bg-primary-800"
+                        />
                     </div>
                 </div>
                 <div className="lg:order-first lg:row-span-2">
