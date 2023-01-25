@@ -14,7 +14,8 @@ function SocialLink({className, href, children, icon: Icon}) {
             href={href}
             className="group flex text-sm font-medium text-primary-800 transition hover:text-accent-500 dark:text-neutral-200 dark:hover:text-success-500"
         >
-            <Icon className="h-6 w-6 flex-none fill-primary-800 dark:fill-neutral-100 transition group-hover:fill-accent-500 dark:group-hover:fill-success-500"/>
+            <Icon
+                className="h-6 w-6 flex-none fill-primary-800 dark:fill-neutral-100 transition group-hover:fill-accent-500 dark:group-hover:fill-success-500"/>
             <span className="ml-4">{children}</span>
         </Link>
     </li>)
@@ -56,36 +57,36 @@ export default function About() {
                     </h1>
                     <div className="mt-6 space-y-7 text-base text-primary-500 dark:text-neutral-200">
                         <p>
-                            For the past five years, I have acted as the CTO of a small marketing agency here in the US.
-                            I'm looking to
-                            focus on software development. If necessary, I am capable of acting in management roles as
-                            well.
-                            My focus has been learning and mastering the core web programming languages (PHP & JS)
-                            rather than
-                            specializing in a few sets of libraries. Doing so has allowed me to use whichever library is
-                            necessary for
-                            the job and quickly adapt to requirements.
-                            My career started in the industrial manufacturing sector. I would design and build products
-                            for various
-                            industries, such as medical, automotive, aviation, and defense. After around five years, I
-                            transitioned
-                            from engineering to software development.
-                            I started by working with WordPress and installing plugins and themes. Then I gradually
-                            learned more
-                            about PHP and Javascript development to build my solutions. Later I would learn to leverage
-                            APIs and
-                            3rd party services to enhance application capabilities. Backend development with PHP has
-                            been my
-                            main focus when it comes to development. I am just as comfortable in Javascript and Python.
-                            I'm able to
-                            write Python code and leverage its vast libraries.
-                            I don't know everything (though It would be awesome if I did). My most valuable skills are;
-                            being able to
-                            teach myself and adapting to any situation that comes my way. While I am self-reliant, my
-                            years of
-                            experience have taught me to rely on the help of others when necessary and to know where to
-                            look for
-                            answers.
+                            For the past 9 years I&#39;ve been working with machines and code. I started off
+                            machining and them gradually moving on to programming the steel eating mammoths that live
+                            inside factories.
+                        </p>
+                        <p>
+                            From then I moved on to Industrial design. I would read and make prints, model out assets,
+                            and then proceed to create the programs that would be fed to the cnc machines in order to
+                            produce a real life part!
+                        </p>
+                        <p>
+                            While that was a very great experience and taught me a lot in terms of problem solving and
+                            being resourceful I found myself gravitating to the development side of things and took an
+                            interest in web technology.
+                        </p>
+                        <p>
+                            Since transitioning into web development I&#39;ve worked with tons of PHP code consisting
+                            mainly of Wordpress, Laravel, SQL . As far as the front end I mainly work with React, Next
+                            and regular old "Vanilla" JS + Tons of other libraries & APIs. I&#39;ts pretty cool to be
+                            able to design, develop and deploy an application from beginning to end. Although I have to
+                            admit learning all this has been quite the challenge.
+                        </p>
+                        <p>
+                            As an upside, Learning how to model objects in Autodesk Inventor and Fusion360 has made
+                            learning and using 3JS a lot easier, Unfortunately blender does not operate the same way as
+                            parametric modelers which was a pretty tough transition.
+                        </p>
+                        <p>
+                            For the past 5 years I have been working at a small marketing company where I would work my
+                            way up to being the lead developer and eventually CTO, leading a team of 4 (Awesome)
+                            developers.
                         </p>
                     </div>
                 </div>

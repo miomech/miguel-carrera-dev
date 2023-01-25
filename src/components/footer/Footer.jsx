@@ -3,7 +3,7 @@ import FooterNavLink from './FooterNavLink'
 import {Container} from '@/components/layouts/Container'
 
 export function Footer() {
-    return (<footer className="mt-5">
+    return (<footer className="mt-10">
         <Container.Inner>
             <div className="border-t border-primary-500/25 pt-10 pb-16 dark:border-primary-500/50">
                 <Container.Inner>

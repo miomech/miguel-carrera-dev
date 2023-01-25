@@ -3,7 +3,8 @@ import Head from 'next/head'
 
 import Card from '@/components/card/Card'
 import SimpleLayout from '@/components/layouts/SimpleLayout'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoDex from '@/images/project-icons/dex.png'
+import logoOwt from '@/images/project-icons/owt.png'
 import CardLink from "@/components/card/CardLink";
 import CardDescription from "@/components/card/CardDescription";
 import LinkIcon from "@/components/icons/LinkIcon";
@@ -11,21 +12,15 @@ import LinkIcon from "@/components/icons/LinkIcon";
 const projects = [
     {
         name: 'Old World Tech',
-        description: 'Helping up and coming makers & developers learn about the inner working of computers. ',
+        description: 'Teaching makers & developers about the inner working of computers by building games. Built with TALL stack',
         link: {href: 'http://oldworldtech.com', label: 'oldworldtech.com'},
-        logo: logoPlanetaria
+        logo: logoOwt
     },
     {
         name: 'Pokedex',
-        description: 'A fun to use online pokedex for all pokemon fans out there!',
+        description: 'A fun to use online Pokedex for all pokemon fans out there! Built with React, Next, Tailwind and Poke API',
         link: {href: 'http://dex.adivolt.com', label: 'dex.adivolt.com'},
-        logo: logoPlanetaria
-    },
-    {
-        name: 'Bueno Price',
-        description: 'A powerful tool for helping businesses of all sizes estimate their pricing correctly',
-        link: {href: 'http://buenoprice.com', label: 'buenoprice.com'},
-        logo: logoPlanetaria
+        logo: logoDex
     },
 ]
 
@@ -41,14 +36,15 @@ export default function Projects() {
             </Head>
             <SimpleLayout
                 title="Check out some of the projects I've been working on."
-                intro="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores debitis magnam omnis, porro voluptate. Doloremque ratione, temporibus. Harum hic, minus? At aut corporis deleniti fugiat minima recusandae repellat repudiandae."
+                intro="Here you'll find some examples of the work I have either done or am currently working on. Feel free to click around,
+                        If you run into some errors chances are the project is still being worked on so you may have to check back later."
             >
                 <ul role="list" className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
                     {projects.map((project) => (
                         <Card as="li" key={project.name}>
                             <div
-                                className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-primary-800/5 ring-1 ring-primary-800/5 dark:border dark:border-primary-500 dark:bg-primary-800 dark:ring-0">
-                                <Image src={project.logo} alt="" className="h-8 w-8" unoptimized/>
+                                className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-primary-800/50 ring-1 ring-primary-800/50 dark:border dark:border-primary-500 dark:bg-primary-800 dark:ring-0">
+                                <Image src={project.logo} alt="" className="h-10 w-10 rounded-full" unoptimized/>
                             </div>
                             <h2 className="mt-6 text-base font-semibold text-primary-800 dark:text-neutral-100">
                                 <CardLink href={project.link.href}>{project.name}</CardLink>
