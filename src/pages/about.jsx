@@ -74,7 +74,7 @@ export default function About() {
                         <p>
                             Since transitioning into web development I&#39;ve worked with tons of PHP code consisting
                             mainly of Wordpress, Laravel, SQL . As far as the front end I mainly work with React, Next
-                            and regular old "Vanilla" JS + Tons of other libraries & APIs. I&#39;ts pretty cool to be
+                            and regular old &#39;Vanilla&#39; JS + Tons of other libraries & APIs. I&#39;ts pretty cool to be
                             able to design, develop and deploy an application from beginning to end. Although I have to
                             admit learning all this has been quite the challenge.
                         </p>
