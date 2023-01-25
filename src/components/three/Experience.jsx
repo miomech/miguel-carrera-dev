@@ -7,9 +7,7 @@ export default function Experience() {
     return (
         <>
             <Environment preset='city'/>
-
-            <color args={['#695b5b']} attach='background'/>
-
+            <color/>
             {/* Requires css to fix the mobile issue */}
             {/* Presentation controls uses "spring" under the hood */}
             <PresentationControls

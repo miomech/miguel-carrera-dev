@@ -39,19 +39,17 @@ export default function Home() {
                 </div>
             </div>
         </Container>
-        <Container className="mt-24 md:mt-28">
-            <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-                <Canvas
-                    camera={{
-                        fov: 45,
-                        near: 0.1,
-                        far: 2000,
-                        position: [-3, 1.5, 4]
-                    }}
-                >
-                    <Experience/>
-                </Canvas>
-            </div>
+        <Container className="mt-5 md:mt-10">
+            <Canvas
+                camera={{
+                    fov: 45,
+                    near: 0.1,
+                    far: 2000,
+                    position: [-3, 1.5, 4]
+                }}
+            >
+                <Experience/>
+            </Canvas>
         </Container>
     </>)
 }
