@@ -5,14 +5,14 @@ import {Container} from '@/components/layouts/Container'
 export function Footer() {
     return (<footer className="mt-32">
         <Container.Inner>
-            <div className="border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40">
+            <div className="border-t border-primary-500/25 pt-10 pb-16 dark:border-primary-500/50">
                 <Container.Inner>
                     <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
-                        <div className="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
+                        <div className="flex gap-6 font-serif text-sm font-medium text-primary-800 dark:text-neutral-200">
                             <FooterNavLink href="/about">About</FooterNavLink>
                             <FooterNavLink href="/projects">Projects</FooterNavLink>
                         </div>
-                        <p className="text-sm text-zinc-400 dark:text-zinc-500">
+                        <p className="text-xs text-neutral-500 dark:text-primary-100/50">
                             &copy; {new Date().getFullYear()} Miguel Carrera. All rights reserved.
                         </p>
                     </div>

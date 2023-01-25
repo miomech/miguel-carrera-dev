@@ -27,13 +27,13 @@ export default function ModeToggle() {
         <button
             type="button"
             aria-label="Toggle dark mode"
-            className="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
+            className="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-primary-800/5 ring-1 ring-primary-800/5 backdrop-blur transition dark:bg-primary-800/90 dark:ring-white/10 dark:hover:ring-white/20"
             onClick={toggleMode}
         >
             <SunIcon
-                className="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600"/>
+                className="h-6 w-6 fill-white stroke-primary-500 transition dark:hidden [@media(prefers-color-scheme:dark)]:stroke-primary-800  [@media(prefers-color-scheme:dark)]:group-hover:stroke-accent-500"/>
             <MoonIcon
-                className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500"/>
+                className="hidden h-6 w-6 fill-primary-800 stroke-success-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-accent-500"/>
         </button>
     )
 }
