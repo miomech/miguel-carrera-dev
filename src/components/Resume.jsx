@@ -1,4 +1,7 @@
-import logoPlanetaria from "@/images/logos/planetaria.svg";
+import logoDM from "@/images/logos/dm.png";
+import logoAttco from "@/images/logos/attco.png";
+import logoMisc from "@/images/logos/misc-jobs.png";
+import logoRBMoldDie from "@/images/logos/r-b-mold-die.png";
 import Image from "next/image";
 import BriefcaseIcon from "@/components/icons/BriefcaseIcon";
 
@@ -7,7 +10,7 @@ export default function Resume() {
         {
             company: 'Duneland Media',
             title: 'Lead Developer',
-            logo: logoPlanetaria,
+            logo: logoDM,
             start: '2018',
             end: {
                 label: 'Present',
@@ -16,19 +19,19 @@ export default function Resume() {
         }, {
             company: 'ATTCo Machine',
             title: 'Lead CNC Programmer',
-            logo: logoPlanetaria,
+            logo: logoAttco,
             start: '2019', end: '2018',
         },
         {
             company: 'R&B Mold & Die',
             title: 'Design Engineer & Programmer',
-            logo: logoPlanetaria,
+            logo: logoRBMoldDie,
             start: '2017', end: '2017',
         },
         {
             company: 'Various Other Manufacturing Companies',
             title: 'CNC Machinist / Programmer',
-            logo: logoPlanetaria,
+            logo: logoMisc,
             start: '2014', end: '2017',
         }
     ]
@@ -42,7 +45,7 @@ export default function Resume() {
             {resume.map((role, roleIndex) => (<li key={roleIndex} className="flex gap-4">
                 <div
                     className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                    <Image src={role.logo} alt="" className="h-7 w-7" unoptimized/>
+                    <Image src={role.logo} alt="" className="h-7 w-7 rounded-full " unoptimized/>
                 </div>
                 <dl className="flex flex-auto flex-wrap gap-x-2">
                     <dt className="sr-only">Company</dt>

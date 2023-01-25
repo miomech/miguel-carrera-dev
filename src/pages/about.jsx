@@ -93,7 +93,7 @@ export default function About() {
                     <ul role="list">
                         <p className='text-gray-500'>(I&#39; m not big on social media!)</p>
                         <SocialLink href="https://github.com/miomech" icon={GitHubIcon} className="mt-4">
-                            Check Out My GitHub
+                            GitHub
                         </SocialLink>
                         <SocialLink
                             href="mailto:miguel.carrera@adivolt.com"
@@ -103,7 +103,9 @@ export default function About() {
                             miguel.carrera@adivolt.com
                         </SocialLink>
                     </ul>
-                    <Resume/>
+                    <div className='mt-5'>
+                        <Resume/>
+                    </div>
                 </div>
             </div>
         </Container>
