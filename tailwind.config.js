@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+/*set custom definitions for theme*/
 
 const { fontFamily } = require('tailwindcss/defaultTheme')
 
