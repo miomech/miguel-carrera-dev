@@ -1,4 +1,4 @@
-import {ContactShadows, Environment, Float, PresentationControls, Text} from '@react-three/drei'
+import {Environment, Float, PresentationControls, Text} from '@react-three/drei'
 import Model from "@/components/three/Model";
 import {Canvas} from "@react-three/fiber";
 import {Suspense} from "react";
@@ -15,6 +15,7 @@ export default function Experience() {
                     far: 2000,
                     position: [-3.5, 1.5, 4]
                 }}
+                className='z-0'
             >
                 <Suspense fallback={<Loader/>}>
                     <Environment preset='city'/>
@@ -30,12 +31,7 @@ export default function Experience() {
                             <Model/>
                         </Float>
                     </PresentationControls>
-                    <ContactShadows
-                        position-y={-1.1}
-                        opacity={0.3}
-                        scale={5}
-                        blur={3}
-                    />
+
                 </Suspense>
             </Canvas>
         </>

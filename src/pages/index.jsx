@@ -9,7 +9,7 @@ export default function Home() {
     return (<>
             <Head>
                 <title>
-                    Miguel Carrera - Software developer, designer
+                    Miguel Carrera - Software developer, designer and maker
                 </title>
                 <meta
                     name="description"

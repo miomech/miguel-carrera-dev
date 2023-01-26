@@ -18,7 +18,6 @@ export default function Model() {
                     rotation={[0.1, Math.PI, 0]}
                     position={[0, 0.55, -1.15]}
                 />
-
                 <Html
                     transform
                     distanceFactor={1.17}
@@ -26,10 +25,10 @@ export default function Model() {
                     rotation-x={-0.256}
                 >
                     {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-                    <a href="/about" className='inline-block w-[1024px] h-[670px] lg:w-[1024px] lg:h-[670px]'>
+                    <div className='block w-[1024px] h-[670px] lg:w-[1024px] lg:h-[670px]'>
                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img className='bg-black rounded-[20px] border-none w-full h-full ' alt="image" src='/hello-php.png'/>
-                    </a>
+                        <img className='bg-black rounded-[20px] border-none w-full h-full z-10' alt="image" src='/hello-php.png'/>
+                    </div>
                 </Html>
             </primitive>
         </>

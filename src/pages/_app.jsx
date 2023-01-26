@@ -28,7 +28,7 @@ export default function App({Component, pageProps}) {
                     <div className="w-full bg-white ring-1 ring-zinc-100 dark:bg-primary-700 dark:ring-success-300/50 "/>
                 </div>
             </div>
-            <div className={`${poppins.variable} ${silkscreen.variable} font-sans relative`}>
+            <div className={`${poppins.variable} ${silkscreen.variable} font-sans font-serif relative z-0`}>
                 <Header/>
                 <main>
                     <Component {...pageProps} />
