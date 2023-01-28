@@ -58,30 +58,24 @@ export default function About() {
                     <div className="mt-6 space-y-7 text-base text-primary-500 dark:text-neutral-200">
                         <p>
                             For the past 9 years I&#39;ve been working with machines and code. I started off
-                            machining and them gradually moving on to programming the steel eating mammoths that live
+                            machining and then gradually moving on to programming the steel eating mammoths that live
                             inside factories.
                         </p>
                         <p>
-                            From then I moved on to Industrial design. I would read and make prints, model out assets,
+                            From then I moved on to Industrial design. I would design, make prints, model out assets,
                             and then proceed to create the programs that would be fed to the cnc machines in order to
-                            produce a real life part!
-                        </p>
-                        <p>
-                            While that was a very great experience and taught me a lot in terms of problem solving and
-                            being resourceful I found myself gravitating to the development side of things and took an
-                            interest in web technology.
+                            produce a real life part! While that was a very great experience and taught me a lot in
+                            terms of problem solving and being resourceful I found myself gravitating to the development
+                            side of things and took an interest in web technology.
                         </p>
                         <p>
                             Since transitioning into web development I&#39;ve worked with tons of PHP code consisting
-                            mainly of Wordpress, Laravel, SQL . As far as the front end I mainly work with React, Next
-                            and regular old &#39;Vanilla&#39; JS + Tons of other libraries & APIs. I&#39;ts pretty cool to be
-                            able to design, develop and deploy an application from beginning to end. Although I have to
-                            admit learning all this has been quite the challenge.
-                        </p>
-                        <p>
-                            As an upside, Learning how to model objects in Autodesk Inventor and Fusion360 has made
-                            learning and using 3JS a lot easier, Unfortunately blender does not operate the same way as
-                            parametric modelers which was a pretty tough transition.
+                            mainly of Wordpress, Laravel (TALL stack) and SQL. As far as the front end I mainly work with React, Next
+                            and regular old &#39;Vanilla&#39; JS + Tons of other libraries & APIs.
+
+                            For me it is pretty satisfying to be able to design, develop and deploy an application from
+                            beginning to end. Also, learning how to model objects in Autodesk Inventor and Fusion360 has made
+                            learning and using 3JS a lot easier,
                         </p>
                         <p>
                             For the past 5 years I have been working at a small marketing company where I would work my
