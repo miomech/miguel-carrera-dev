@@ -99,7 +99,7 @@ export default function Projects() {
                                                     <Image className="w-5 h-5"
                                                            src={tech.icon}
                                                            alt=""/>
-                                                    <p className="pl-2 font-bold text-neutral-800">{tech.name}</p>
+                                                    <p className="pl-2 font-bold text-neutral-800 dark:text-neutral-100">{tech.name}</p>
                                                 </div>
                                             </>)
                                     })}
